@@ -13,4 +13,4 @@ drm: # Install Dell Repository Manager into a Centos7 image
 ifndef REGISTRY
 	$(eval REGISTRY="")
 endif
-	docker build --rm=true --pull -t $(REGISTRY)/$@:3.2 - < Dockerfile
+	docker build --rm=true --pull -t $(REGISTRY)/$@:3.3.2 -f Dockerfile .
