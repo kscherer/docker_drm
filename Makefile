@@ -9,8 +9,8 @@ help:
 	@echo
 	@grep -E '^[a-zA-Z][^:]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-15s\033[0m %s\n", $$1, $$2}'
 
-drm: # Install Dell Repository Manager into a Centos7 image
+drm: ## Create Dell Repository Manager image
 ifndef REGISTRY
 	$(eval REGISTRY="")
 endif
-	docker build --rm=true --pull -t $(REGISTRY)/$@:3.3.2 -f Dockerfile .
+	docker build --rm=true --pull -t $(REGISTRY)/$@:3.4.2 -f Dockerfile .
