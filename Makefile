@@ -13,4 +13,4 @@ drm: ## Create Dell Repository Manager image
 ifndef REGISTRY
 	$(eval REGISTRY="")
 endif
-	docker build --rm=true --pull -t $(REGISTRY)/$@:3.4.2 -f Dockerfile .
+	docker build --rm=true --pull -t $(REGISTRY)/$@:3.4.4 -f Dockerfile .
