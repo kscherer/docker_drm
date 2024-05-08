@@ -41,3 +41,9 @@ updates possible.
 
 To use the exported files, the exported directory must be served over
 NFS or HTTP/HTTPS.
+
+# Upgrades
+
+The upgrade of 3.4.2 to 3.4.4 failed due to "missing keys" for the
+database. Recovery was not possible and it was necessary to delete the old
+database and restart from scratch.
