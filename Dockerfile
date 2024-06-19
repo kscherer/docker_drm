@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:24.04
 
 # DRM website: https://www.dell.com/support/home/en-us/Drivers/DriversDetails?driverid=HHV83
 
